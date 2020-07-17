@@ -6,6 +6,7 @@ import Welcome from '../components/Welcome.vue'
 import Users from '../components/user/Users.vue'
 import Right from '../components/power/Right.vue'
 import Roles from '../components/power/Roles.vue'
+import Cate from '../components/goods/Cate.vue'
 Vue.use(VueRouter)
   const routes = [
     {path:'/',redirect:'/login'},//设置重定向
@@ -18,7 +19,8 @@ Vue.use(VueRouter)
         {path :'/welcome', component:Welcome},
         {path :'/users',component:Users},
         {path :'/rights',component:Right},
-        {path :'/roles',component:Roles}
+        {path :'/roles',component:Roles},
+        {path :'/categories',component:Cate}
       ],
     },
 
