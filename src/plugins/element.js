@@ -28,7 +28,10 @@ import {
     Tree,
     Select,
     Option,
-    Cascader
+    Cascader,
+    Alert,
+    Tabs,
+    TabPane,
 }
 from 'element-ui'
 //注册为全局可用的组件
@@ -59,6 +62,10 @@ Vue.use(Tree)
 Vue.use(Select)
 Vue.use(Option)
 Vue.use(Cascader)
+Vue.use(Alert)
+Vue.use(Tabs)
+Vue.use(TabPane)
+
 //弹窗需要全局挂载,弹窗组件挂载到原型对象，每一个原型组件都可以通过this法昂问$message ,弹窗提示
 Vue.prototype.$message = Message
 Vue.prototype.$confirm=MessageBox.confirm
