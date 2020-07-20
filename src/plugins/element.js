@@ -32,6 +32,11 @@ import {
     Alert,
     Tabs,
     TabPane,
+    Steps,
+    Step,
+    CheckboxGroup,
+    Checkbox,
+    Upload
 }
 from 'element-ui'
 //注册为全局可用的组件
@@ -65,7 +70,11 @@ Vue.use(Cascader)
 Vue.use(Alert)
 Vue.use(Tabs)
 Vue.use(TabPane)
-
+Vue.use(Steps)
+Vue.use(Step)
+Vue.use(CheckboxGroup)
+Vue.use(Checkbox)
+Vue.use(Upload)
 //弹窗需要全局挂载,弹窗组件挂载到原型对象，每一个原型组件都可以通过this法昂问$message ,弹窗提示
 Vue.prototype.$message = Message
 Vue.prototype.$confirm=MessageBox.confirm
